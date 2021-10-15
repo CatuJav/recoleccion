@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
-    'title_prefix' => '',
+    'title' => 'Recoleccion San Pablito',
+    'title_prefix' => 'RSP',
     'title_postfix' => '',
 
     /*
@@ -45,12 +45,12 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>SAN</b>PABLITO',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
-    'logo_img_alt' => 'AdminLTE',
+    'logo_img_alt' => 'San Pablito',
 
     /*
     |--------------------------------------------------------------------------
@@ -243,8 +243,9 @@ return [
         ],
         [
             'text' => 'blog',
-            'url'  => 'admin/blog',
-            'can'  => 'manage-blog',
+            'route'  => 'productos.index',
+            'icon'        => 'fab fa-product-hunt',
+            //'can'  => 'manage-blog',
         ],
         [
             'text'        => 'pages',
@@ -252,6 +253,12 @@ return [
             'icon'        => 'far fa-fw fa-file',
             'label'       => 4,
             'label_color' => 'success',
+        ],
+        ['header' => 'PRODUCTOS Y SERVICIOS'],
+        [
+            'text' => 'Categorias ',
+            'route'  => 'categoria_productos.index',
+            'icon'        => 'fab fa-product-hunt',
         ],
         ['header' => 'account_settings'],
         [

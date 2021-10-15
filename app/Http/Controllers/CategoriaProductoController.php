@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CategoriaProducto;
+
 use Illuminate\Http\Request;
 
 class CategoriaProductoController extends Controller
@@ -14,7 +14,9 @@ class CategoriaProductoController extends Controller
      */
     public function index()
     {
-        //
+
+
+        return view('productos.show-categoria');
     }
 
     /**
